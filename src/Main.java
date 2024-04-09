@@ -11,12 +11,25 @@ public class Main {
                 if (j == 3 || j == 7 || i == 3 || i == 7){
                     arr[i][j] = " * ";
                 }else arr[i][j] = "   ";
+                System.out.print(arr[i][j]);
             }
+            System.out.println();
         }
-        System.out.println("New XO table");
+        boolean win = false;
+        String XO = "x";
+        int UserNumber;
 
-        steps.step1X(arr);
-        steps.step2O(arr);
+        while (win == false){
+            XO = "x";
+            System.out.println("Ход " + XO + ", укажите поле: ");
+            UserNumber = scanner.nextInt();
+            steps.step(arr, UserNumber, XO);
+
+            XO = "o";
+            System.out.println("Ход " + XO + ", укажите поле: ");
+            UserNumber = scanner.nextInt();
+            steps.step(arr, UserNumber, XO);
+        }
 
     }
 }
