@@ -237,7 +237,17 @@ public class Steps {
         }
     }
 
-    void win() {
+    /*void win(int UserNumber) {
+        if (UserNumber)
+    }*/
 
+    boolean checkCorrectStep(int UserNumber) {
+        if (UserNumber > 0 && UserNumber <= 9) {
+            return true;
+        } else {
+            System.out.println("Введено некорректное значение");
+            System.out.println("Попробуй ещё");
+            return false;
+        }
     }
 }

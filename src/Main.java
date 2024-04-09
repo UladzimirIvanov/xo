@@ -18,32 +18,40 @@ public class Main {
         boolean win = false;
         String XO = "x";
         int UserNumber;
+        int[] arrStepX = new int[9];
+        int[] arrStepO = new int[9];
+        int CountStepX = 0;
+        int CountStepO = 0;
+
 
         while (win == false) {
             XO = "x";
             boolean CorrectUserNumberX = false;
+            System.out.println("Ход " + XO + ", укажите поле: ");
+
             while (CorrectUserNumberX == false) {
-                System.out.println("Ход " + XO + ", укажите поле: ");
                 UserNumber = scanner.nextInt();
-                if (UserNumber > 0 && UserNumber <= 9) {
+                CorrectUserNumberX = steps.checkCorrectStep(UserNumber);
+                if (CorrectUserNumberX == true) {
                     steps.step(arr, UserNumber, XO);
-                    CorrectUserNumberX = true;
-                } else {
-                    System.out.println("Введено некорректное значение");
                 }
+                arrStepX[CountStepX] = UserNumber;
+                CountStepX++;
             }
 
             XO = "o";
-            boolean CorrectuserNumberO = false;
-            while (CorrectuserNumberO == false){
-                System.out.println("Ход " + XO + ", укажите поле: ");
+            boolean CorrectUserNumberO = false;
+            System.out.println("Ход " + XO + ", укажите поле: ");
+
+            while (CorrectUserNumberO == false) {
                 UserNumber = scanner.nextInt();
-                if (UserNumber > 0 && UserNumber <= 9) {
+                CorrectUserNumberO = steps.checkCorrectStep(UserNumber);
+                if (CorrectUserNumberO == true) {
                     steps.step(arr, UserNumber, XO);
-                    CorrectuserNumberO = true;
-                } else {
-                    System.out.println("Введено некорректное значение");
                 }
+
+                arrStepO[CountStepO] = UserNumber;
+                CountStepO++;
             }
         }
     }
