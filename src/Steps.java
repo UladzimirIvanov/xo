@@ -1,6 +1,6 @@
 public class Steps {
-    void step(String[][] arr, int UserNumber, String XO){
-        if (UserNumber == 1 && XO == "x"){
+    void step(String[][] arr, int UserNumber, String XO) {
+        if (UserNumber == 1 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 0 || j == 2) && (i == 0 || i == 2)) {
@@ -13,7 +13,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 2 && XO == "x"){
+        if (UserNumber == 2 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 4 || j == 6) && (i == 0 || i == 2)) {
@@ -26,7 +26,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 3 && XO == "x"){
+        if (UserNumber == 3 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 8 || j == 10) && (i == 0 || i == 2)) {
@@ -39,7 +39,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 4 && XO == "x"){
+        if (UserNumber == 4 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 0 || j == 2) && (i == 4 || i == 6)) {
@@ -52,7 +52,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 5 && XO == "x"){
+        if (UserNumber == 5 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 4 || j == 6) && (i == 4 || i == 6)) {
@@ -65,7 +65,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 6 && XO == "x"){
+        if (UserNumber == 6 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 8 || j == 10) && (i == 4 || i == 6)) {
@@ -78,7 +78,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 7 && XO == "x"){
+        if (UserNumber == 7 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 0 || j == 2) && (i == 8 || i == 10)) {
@@ -91,7 +91,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 8 && XO == "x"){
+        if (UserNumber == 8 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 4 || j == 6) && (i == 8 || i == 10)) {
@@ -104,7 +104,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 9 && XO == "x"){
+        if (UserNumber == 9 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 8 || j == 10) && (i == 8 || i == 10)) {
@@ -118,7 +118,7 @@ public class Steps {
             }
         }
 
-        if (UserNumber == 1 && XO == "o"){
+        if (UserNumber == 1 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 1) && (i == 0 || i == 2)) {
@@ -131,7 +131,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 2 && XO == "o"){
+        if (UserNumber == 2 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 5) && (i == 0 || i == 2)) {
@@ -144,7 +144,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 3 && XO == "o"){
+        if (UserNumber == 3 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 9) && (i == 0 || i == 2)) {
@@ -157,7 +157,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 4 && XO == "o"){
+        if (UserNumber == 4 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 1) && (i == 4 || i == 6)) {
@@ -170,7 +170,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 5 && XO == "o"){
+        if (UserNumber == 5 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 5) && (i == 4 || i == 6)) {
@@ -183,7 +183,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 6 && XO == "o"){
+        if (UserNumber == 6 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 9) && (i == 4 || i == 6)) {
@@ -196,7 +196,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 7 && XO == "o"){
+        if (UserNumber == 7 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 1) && (i == 8 || i == 10)) {
@@ -209,7 +209,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 8 && XO == "o"){
+        if (UserNumber == 8 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 5) && (i == 8 || i == 10)) {
@@ -222,7 +222,7 @@ public class Steps {
                 System.out.println();
             }
         }
-        if (UserNumber == 9 && XO == "o"){
+        if (UserNumber == 9 && XO == "o") {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr[i].length; j++) {
                     if ((j == 9) && (i == 8 || i == 10)) {
@@ -235,6 +235,9 @@ public class Steps {
                 System.out.println();
             }
         }
+    }
+
+    void win() {
 
     }
 }
