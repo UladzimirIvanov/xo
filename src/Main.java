@@ -18,11 +18,6 @@ public class Main {
         boolean win = false;
         String XO = "x";
         int UserNumber;
-        int[] arrStepX = new int[9];
-        int[] arrStepO = new int[9];
-        int CountStepX = 0;
-        int CountStepO = 0;
-
 
         while (win == false) {
             XO = "x";
@@ -33,10 +28,9 @@ public class Main {
                 UserNumber = scanner.nextInt();
                 CorrectUserNumberX = steps.checkCorrectStep(UserNumber);
                 if (CorrectUserNumberX == true) {
+                    steps.CountStep++;
                     steps.step(arr, UserNumber, XO);
                 }
-                arrStepX[CountStepX] = UserNumber;
-                CountStepX++;
             }
 
             XO = "o";
@@ -47,11 +41,9 @@ public class Main {
                 UserNumber = scanner.nextInt();
                 CorrectUserNumberO = steps.checkCorrectStep(UserNumber);
                 if (CorrectUserNumberO == true) {
+                    steps.CountStep++;
                     steps.step(arr, UserNumber, XO);
                 }
-
-                arrStepO[CountStepO] = UserNumber;
-                CountStepO++;
             }
         }
     }

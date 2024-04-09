@@ -1,4 +1,9 @@
 public class Steps {
+
+    int[] arrStep = new int[9];
+    int CountStep = 0;
+    boolean test = false;
+
     void step(String[][] arr, int UserNumber, String XO) {
         if (UserNumber == 1 && XO == "x") {
             for (int i = 0; i < arr.length; i++) {
@@ -237,12 +242,16 @@ public class Steps {
         }
     }
 
-    /*void win(int UserNumber) {
-        if (UserNumber)
-    }*/
-
     boolean checkCorrectStep(int UserNumber) {
-        if (UserNumber > 0 && UserNumber <= 9) {
+        for (int i = 0; i < arrStep.length; i++) {
+            if ((arrStep[i] != UserNumber) && (UserNumber > 0 && UserNumber <= 9)){
+                test = true;
+                arrStep[CountStep] = UserNumber;
+            }else {
+                test = false;
+            }
+        }
+        if (test == true) {
             return true;
         } else {
             System.out.println("Введено некорректное значение");
@@ -250,4 +259,8 @@ public class Steps {
             return false;
         }
     }
+
+    /*boolean win(int UserNumber) {
+        if (UserNumber)
+    }*/
 }
